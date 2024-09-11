@@ -428,7 +428,7 @@ body {
 }
 #es-garnier.es-garnier .es-active-ingredients__item-description {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   line-height: inherit;
   color: inherit;
   font-family: inherit;
@@ -446,7 +446,12 @@ body {
 #es-garnier.es-garnier .es-active-ingredients__image--desktop {
   display: block;
   background: linear-gradient(90deg, #E9F5EF 47.5%, #00B1D8 100%);
-  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #es-garnier.es-garnier .es-active-ingredients__image--desktop {
+    width: 100%;
+  }
 }
 
 #es-garnier.es-garnier .es-active-ingredients__item--left .blue-line {
@@ -613,6 +618,7 @@ body {
   #es-garnier.es-garnier .es-active-ingredients__item-description {
     font-size: 12px;
     margin-left: -20px;
+    padding: 0;
   }
   #es-garnier.es-garnier .es-active-ingredients__item-description--right {
     text-align: right;
@@ -629,8 +635,9 @@ body {
     right: -28%;
   }
   #es-garnier.es-garnier .es-active-ingredients__image--desktop {
+    width: 50%;
+    max-width: 100%;
     display: block;
-    width:auto;
   }
 }
 
