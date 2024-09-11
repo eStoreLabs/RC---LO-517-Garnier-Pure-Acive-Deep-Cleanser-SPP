@@ -35,15 +35,17 @@ body {
   width: 100%;
 }
 #es-garnier.es-garnier .es-kv__content {
-  margin-top: 50%;
   position: relative;
 }
 #es-garnier.es-garnier .es-kv__text {
-  position: relative;
   text-align: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  top: 300px;
+  left: 44%;
+  
 } 
 
 #es-garnier.es-garnier .es-kv__img {
@@ -52,6 +54,13 @@ body {
   aspect-ratio: auto;
   width: 100%;
   height: auto;
+}
+#es-garnier.es-garnier .es-kv__img--photo--only-mobile {
+  display: block;
+  width: 100%;
+}
+#es-garnier.es-garnier .es-kv__img-desktop {
+  display: none;
 }
 
 #es-garnier.es-garnier .es-kv__image {
@@ -62,11 +71,7 @@ body {
 }
 
 #es-garnier.es-garnier .es-kv__image .product-bottle {
-  width: 40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
+  display: none;
 }
 
 #es-garnier.es-garnier .es-kv__title {
@@ -75,7 +80,7 @@ body {
   padding: 0;
   line-height: inherit;
   color: inherit;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
   color: #ffffff;
@@ -84,6 +89,7 @@ body {
   z-index: 1;
   text-align: center;
 }
+
 #es-garnier.es-garnier .es-kv__blue-background{
   display: inline-block;
   background: rgba(63, 194, 236, 0.5);
@@ -135,7 +141,7 @@ body {
     width: 25%;
   }
   #es-garnier.es-garnier .es-kv__content {
-    margin-top: 100px;
+    margin-top: 0;
   }
   #es-garnier.es-garnier .es-kv__title {
     font-size: 22px;
@@ -154,6 +160,21 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+  }
+
+  #es-garnier.es-garnier .es-kv__img--photo--only-mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-kv__img-desktop {
+    display: block;
+  }
+
+  #es-garnier.es-garnier .es-kv__image .product-bottle {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
   }
   #es-garnier.es-garnier .es-kv__label {
     position: absolute;
@@ -257,12 +278,12 @@ body {
   padding-bottom: 30px;
 }
 #es-garnier.es-garnier .es-evaluation__text-title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 25px;
   font-style: italic;
 }
 #es-garnier.es-garnier .es-evaluation__text-subtitle {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
 }
 #es-garnier.es-garnier .es-ingredients__packshot {
@@ -295,7 +316,8 @@ body {
   border-radius: 16px;
   box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
-  width:80%;
+  /*width:80%;*/
+  width: 250px
 }
 #es-garnier.es-garnier .es-ingredients__single:hover {
   transform: scale(1.05);
@@ -381,11 +403,9 @@ body {
   }
 }
 #es-garnier.es-garnier .es-active-ingredients__container {
-  background: linear-gradient(90deg, #E9F5EF 47.5%, #00B1D8 100%);
-  height: 350px;
   padding-top: 25px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 0;
+  padding-right: 0;
 }
 #es-garnier.es-garnier .es-active-ingredients__title {
   text-transform: uppercase;
@@ -424,7 +444,9 @@ body {
   max-width: 100%;
 }
 #es-garnier.es-garnier .es-active-ingredients__image--desktop {
-  display: none;
+  display: block;
+  background: linear-gradient(90deg, #E9F5EF 47.5%, #00B1D8 100%);
+  width: 100%;
 }
 
 #es-garnier.es-garnier .es-active-ingredients__item--left .blue-line {
@@ -441,11 +463,15 @@ body {
     padding-top: 35px;
   }
   #es-garnier.es-garnier .es-active-ingredients__container {
+    background: linear-gradient(90deg, #E9F5EF 47.5%, #00B1D8 100%);
     position: relative;
     height: 550px;
     padding-top: 50px;
     padding-left: 0;
     padding-right: 0;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__image--desktop {
+  background: none;
   }
   #es-garnier.es-garnier .es-active-ingredients__item {
     position: absolute;
@@ -604,8 +630,10 @@ body {
   }
   #es-garnier.es-garnier .es-active-ingredients__image--desktop {
     display: block;
+    width:auto;
   }
 }
+
 
 @media screen and (min-width: 850px) {
   #es-garnier.es-garnier .es-active-ingredients__item-description {
@@ -882,7 +910,7 @@ body {
   width: 100%;
 }
 #es-garnier.es-garnier .es-cross__link:hover {
-  background: #e61313;
+  background: #c64a4a;
 }
 #es-garnier.es-garnier .es-cross__img {
   max-width: 80%;
@@ -1077,7 +1105,7 @@ body {
     max-width: 61%;
   }
   #es-garnier.es-garnier .es-evaluation__text {
-    max-width: 350px;
+    max-width: 339px;
   }
   #es-garnier.es-garnier .es-evaluation__packshot {
     max-width: 150px;
@@ -1250,7 +1278,7 @@ body {
 }
 
 #es-garnier.es-garnier .es-cross__slider .es-cross__product:hover .es-cross__link {
-  background: #f47435;
+  background: #c64a4a;
 }
 
 #es-garnier.es-garnier .es-cross .swiper-container-horizontal > .swiper-pagination-bullets,
