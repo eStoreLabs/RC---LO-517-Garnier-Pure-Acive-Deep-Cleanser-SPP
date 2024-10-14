@@ -1243,7 +1243,9 @@ body {
   #es-garnier.es-garnier .es-cross__steps-item--2-after,
   #es-garnier.es-garnier .es-cross__steps-item--3-after,
   #es-garnier.es-garnier .es-cross__steps-item--4-after {
-    display: block
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #0499c3;
   }
 
   #es-garnier.es-garnier .es-cross__steps-item--right {
