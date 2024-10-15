@@ -146,7 +146,7 @@ body {
   }
 }
 
-@media screen and (min-width: 709px) {
+@media screen and (min-width: 1200px) {
 
   #es-garnier.es-garnier .es-kv__img {
     display: block;
@@ -414,7 +414,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 709px) {
+@media screen and (min-width: 1200px) {
 
   #es-garnier.es-garnier .es-evaluation {
     max-width: 95%;
@@ -617,7 +617,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 709px) {
+@media screen and (min-width: 1200px) {
   #es-garnier.es-garnier .es-active-ingredients {
     padding-top: 35px;
   }
@@ -1152,7 +1152,7 @@ body {
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 709px) {
+@media screen and (min-width: 1200px) {
   #es-garnier.es-garnier .es-apply {
     max-width: 900px;
     margin: 0 auto;
